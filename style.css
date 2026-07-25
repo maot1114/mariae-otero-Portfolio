@@ -4007,3 +4007,554 @@ h3 {
     flex-direction: column;
   }
 }
+
+/* ==================================================
+   CREATIVE STUDIO FEATURED PROJECT CARD
+================================================== */
+
+.creative-studio-preview {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 18% 22%,
+      rgba(211, 164, 125, 0.25),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 82% 76%,
+      rgba(185, 157, 201, 0.24),
+      transparent 31%
+    ),
+    #f7f3ef;
+}
+
+.creative-preview-shape {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  box-shadow: 0 22px 45px rgba(40, 31, 25, 0.13);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.creative-preview-shape span {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+.creative-preview-coffee {
+  width: 38%;
+  height: 62%;
+  left: 10%;
+  top: 15%;
+  z-index: 3;
+  background: #8f604d;
+  color: #f5e5db;
+  transform: rotate(-5deg);
+}
+
+.creative-preview-poster {
+  width: 36%;
+  height: 56%;
+  right: 10%;
+  top: 11%;
+  z-index: 2;
+  background: #c7942e;
+  color: #fff8e9;
+  transform: rotate(6deg);
+}
+
+.creative-preview-book {
+  width: 42%;
+  height: 30%;
+  right: 18%;
+  bottom: 9%;
+  z-index: 4;
+  background: #aabda7;
+  color: #26392d;
+  transform: rotate(-2deg);
+}
+
+.creative-studio-card:hover .creative-preview-coffee {
+  transform: rotate(-7deg) translateY(-5px);
+}
+
+.creative-studio-card:hover .creative-preview-poster {
+  transform: rotate(8deg) translateY(-4px);
+}
+
+.creative-studio-card:hover .creative-preview-book {
+  transform: rotate(-1deg) translateY(-7px);
+}
+
+.creative-studio-card:hover .creative-preview-shape {
+  box-shadow: 0 26px 55px rgba(40, 31, 25, 0.17);
+}
+
+@media (max-width: 700px) {
+  .creative-studio-preview {
+    min-height: 330px;
+  }
+}
+
+/* ==================================================
+   CREATIVE STUDIO PAGE
+================================================== */
+
+.creative-studio-page {
+  background: #fbfaf8;
+  color: #252321;
+}
+
+.studio-intro {
+  padding-top: 95px;
+  padding-bottom: 75px;
+}
+
+.studio-intro-container {
+  max-width: 1050px;
+}
+
+.studio-back-link {
+  display: inline-block;
+  margin-bottom: 42px;
+  color: inherit;
+  font-size: 0.92rem;
+  text-decoration: none;
+  opacity: 0.7;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.studio-back-link:hover {
+  opacity: 1;
+  transform: translateX(-4px);
+}
+
+.studio-intro h1 {
+  max-width: 850px;
+  margin: 10px 0 22px;
+  font-size: clamp(3.8rem, 7vw, 6.5rem);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+
+.studio-intro-text {
+  max-width: 620px;
+  margin: 0;
+  font-size: clamp(1rem, 1.4vw, 1.18rem);
+  line-height: 1.6;
+  opacity: 0.76;
+}
+
+.studio-project-index {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+  margin-top: 3rem;
+  padding: 1.25rem 0;
+
+  border-top: 1px solid rgba(0,0,0,.08);
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+.studio-project-link {
+  color: #7b7b7b;
+  text-decoration: none;
+  font-size: .96rem;
+  font-weight: 400;
+  transition: .25s ease;
+}
+
+.studio-project-link.active{
+    color:#202020;
+    font-weight:600;
+}
+
+.studio-project-divider{
+    margin:0 .9rem;
+    color:#bdbdbd;
+    user-select:none;
+}
+
+.studio-project-link:hover {
+  color: #202020;
+}
+
+.studio-project-index a:hover {
+  opacity: 1;
+}
+
+/* Shared project structure */
+
+.studio-project {
+  padding: 54px 0 62px;
+}
+
+.studio-project-container {
+  max-width: 1120px;
+}
+
+.studio-project-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 18px;
+}
+
+.studio-project-number {
+  margin: 0 0 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  opacity: 0.64;
+}
+
+.studio-project-heading h2 {
+  margin: 0;
+  font-size: clamp(2.45rem, 4.2vw, 3.85rem);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.studio-project-type {
+  margin: 0 0 8px;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  opacity: 0.7;
+}
+
+.studio-project-summary {
+  max-width: 660px;
+  margin: 0 0 24px;
+  font-size: clamp(0.94rem, 1.1vw, 1.03rem);
+  line-height: 1.55;
+  opacity: 0.78;
+}
+
+.studio-hero {
+  margin: 0 0 28px;
+  overflow: hidden;
+  border-radius: 26px;
+}
+
+.studio-hero img {
+  display: block;
+  width: 100%;
+  height: clamp(360px, 42vw, 520px);
+  object-fit: cover;
+  object-position: center;
+}
+
+.studio-gallery {
+  display: grid;
+  gap: 18px;
+}
+
+.studio-gallery-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.studio-gallery-item {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.studio-gallery-item img {
+  display: block;
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.studio-gallery-item:hover img {
+  transform: scale(1.025);
+}
+
+.studio-project-footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 42px;
+  margin-top: 38px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(37, 35, 33, 0.15);
+}
+
+.studio-project-footer p {
+  max-width: 630px;
+  margin: 0;
+  line-height: 1.7;
+  opacity: 0.74;
+}
+
+.studio-project-footer a {
+  color: inherit;
+  font-size: 0.92rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* ==================================================
+   CREATIVE STUDIO PROJECT DETAILS
+================================================== */
+
+.studio-project-details {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 38px;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.studio-project-details > div {
+  min-height: 118px;
+  padding: 23px 22px;
+  border-right: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.studio-project-details > div:first-child {
+  padding-left: 0;
+}
+
+.studio-project-details > div:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.studio-detail-label {
+  margin-bottom: 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+.studio-project-details p:last-child {
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+/* Coffee atmosphere */
+
+.studio-project-coffee {
+  background: #9a6854;
+  color: #faeee6;
+}
+
+.studio-coffee-hero {
+  background: #704737;
+}
+
+/* Project atmosphere placeholders */
+
+.studio-project-symphony {
+  background: #b98929;
+  color: #fff9ea;
+}
+
+.studio-project-olipop {
+  position: relative;
+  overflow: hidden;
+  background: #d57795;
+  color: #fffaf7;
+}
+
+.studio-project-olipop::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38%;
+  height: 100%;
+  background: #80b9c5;
+  content: "";
+}
+
+.studio-project-olipop .studio-project-container {
+  position: relative;
+  z-index: 1;
+}
+
+.studio-olipop-hero {
+  background: #f2d8d5;
+}
+
+.studio-project-olipop .studio-gallery-item {
+  overflow: hidden;
+  border-radius: 32px;
+  box-shadow: 0 18px 45px rgba(87, 42, 61, 0.2);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.studio-project-olipop .studio-gallery-item img {
+  height: 360px;
+}
+
+.studio-project-olipop .studio-gallery-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 26px 55px rgba(87, 42, 61, 0.26);
+}
+
+.studio-project-book {
+  background: #aebfa8;
+  color: #26382e;
+}
+
+.studio-project-cards {
+  background: #c9b4d8;
+  color: #352a3c;
+}
+
+.studio-project-placeholder {
+  min-height: 390px;
+  display: flex;
+  align-items: center;
+}
+
+.studio-coming-soon {
+  margin-top: 48px;
+  font-size: 1rem;
+  opacity: 0.62;
+}
+
+/* Responsive Creative Studio */
+
+@media (max-width: 900px) {
+  .studio-intro {
+    padding-top: 130px;
+    padding-bottom: 85px;
+  }
+
+  .studio-project {
+    padding: 66px 0;
+  }
+
+  .studio-project-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .studio-gallery-three {
+    grid-template-columns: 1fr;
+  }
+
+  .studio-gallery-item img {
+    height: auto;
+    max-height: 700px;
+  }
+
+  .studio-project-footer {
+    flex-direction: column;
+  }
+
+  .studio-hero img {
+    height: clamp(330px, 58vw, 500px);
+  }
+}
+
+@media (max-width: 600px) {
+  .studio-intro {
+    padding-top: 110px;
+    padding-bottom: 70px;
+  }
+
+  .studio-intro h1 {
+    font-size: clamp(3.4rem, 18vw, 5.2rem);
+  }
+
+  .studio-project {
+    padding: 54px 0;
+  }
+
+  .studio-project-heading h2 {
+    font-size: clamp(2.45rem, 12vw, 3.7rem);
+  }
+
+  .studio-hero,
+  .studio-gallery-item {
+    border-radius: 18px;
+  }
+
+  .studio-hero img {
+    height: clamp(260px, 72vw, 420px);
+  }
+
+  .studio-project-index {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.studio-project-number {
+  display: none;
+}
+
+/* ==================================================
+   COLORADO SYMPHONY PROJECT
+================================================== */
+
+.studio-symphony-hero {
+  background: #171511;
+}
+
+.studio-symphony-hero img {
+  object-position: center 42%;
+}
+
+.studio-coffee-hero img,
+.studio-olipop-hero img {
+  object-position: center;
+}
+
+.studio-gallery-symphony {
+  grid-template-columns: 1.25fr 0.75fr;
+}
+
+.studio-gallery-symphony .studio-gallery-item img {
+  height: 460px;
+}
+
+.studio-gallery-item-large img {
+  object-position: center top;
+}
+
+.studio-gallery-item-small img {
+  object-position: center;
+}
+
+@media (max-width: 900px) {
+  .studio-gallery-symphony {
+    grid-template-columns: 1fr;
+  }
+
+  .studio-gallery-symphony .studio-gallery-item img {
+    height: auto;
+    max-height: 750px;
+  }
+}
+
+@media (max-width: 700px) {
+  .studio-project-olipop::before {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 32%;
+  }
+}
