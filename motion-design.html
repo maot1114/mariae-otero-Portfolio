@@ -14,19 +14,32 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="motion-design-page">
 
+  <!-- Header and navigation -->
   <header class="site-header">
-    <div class="container nav-container">
-      <a class="logo" href="index.html#home">Maria E Otero</a>
+    <nav class="navigation container" aria-label="Main navigation">
 
-      <nav class="main-nav" aria-label="Main navigation">
+      <a
+        class="brand"
+        href="index.html#home"
+        aria-label="Maria Otero homepage"
+      >
+        <img
+          src="assets/images/meo-logo.png"
+          alt="MEO Logo"
+          class="brand-logo"
+        >
+      </a>
+
+      <div class="nav-links">
         <a href="index.html#about">About</a>
         <a href="index.html#projects">Projects</a>
         <a href="index.html#expertise">Expertise</a>
         <a href="index.html#contact">Contact</a>
-      </nav>
-    </div>
+      </div>
+
+    </nav>
   </header>
 
   <main class="motion-progress-page">
@@ -105,13 +118,22 @@
 
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container footer-content">
-      <p>© 2026 Maria E Otero</p>
+    <div class="footer-content container">
 
-      <a href="mailto:meotero.94@gmail.com">
-        meotero.94@gmail.com
-      </a>
+      <div class="footer-brand">
+        <span>MEO</span>
+      </div>
+
+      <p class="footer-credit">
+        Designed and developed by Maria Otero.
+      </p>
+
+      <p class="footer-copyright">
+        © 2026
+      </p>
+
     </div>
   </footer>
 
