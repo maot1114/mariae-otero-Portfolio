@@ -19,8 +19,8 @@
 </head>
 
 <body class="case-study-page">
-  <!-- Header and navigation -->
-  <header class="site-header">
+
+  <header class="site-header case-study-header">
     <nav class="navigation container" aria-label="Main navigation">
 
       <a
@@ -60,7 +60,7 @@
 
           <div>
             <p class="case-project-type">
-              Veterinary wearable design
+              Veterinary wearable system
             </p>
 
             <h1>PawPulse</h1>
@@ -74,9 +74,9 @@
 
           <div class="case-hero-introduction">
             <p>
-              PawPulse combines veterinary workflow research, wearable
-              construction, electronics prototyping, and extended
-              real-world testing.
+              PawPulse brings wearable construction, embedded electronics,
+              veterinary workflow research, and extended home testing into one
+              coordinated monitoring system.
             </p>
           </div>
 
@@ -96,25 +96,21 @@
 
           <div class="case-meta-item">
             <p class="case-meta-label">Project</p>
-            <p>Individual senior design project</p>
+            <p>Individual senior capstone project</p>
           </div>
 
           <div class="case-meta-item">
             <p class="case-meta-label">Methods</p>
-            <p>Research, sewing, electronics, and wear testing</p>
+            <p>Research, soft-goods design, embedded systems, prototyping, testing</p>
           </div>
 
         </div>
 
-        <figure class="case-hero-media">
+        <figure class="case-visual case-visual-hero">
           <img
-            src="assets/images/pawpulse/hero.JPG"
-            alt="Small Chihuahua wearing the PawPulse prototype vest"
+            src="assets/images/pawpulse/pawpulse-hero.png"
+            alt="PawPulse open-wrap wearable and enclosed monitoring device"
           >
-
-          <figcaption>
-            Final integrated PawPulse prototype during wear testing.
-          </figcaption>
         </figure>
 
       </div>
@@ -127,215 +123,144 @@
       aria-label="PawPulse case-study sections"
     >
       <div class="container case-section-navigation-inner">
-        <a href="#overview">Overview</a>
         <a href="#challenge">Challenge</a>
         <a href="#research">Research</a>
+        <a href="#architecture">System</a>
+        <a href="#wearable">Wearable</a>
         <a href="#process">Process</a>
-        <a href="#testing">Testing</a>
-        <a href="#solution">Solution</a>
+        <a href="#validation">Validation</a>
+        <a href="#contributions">Contributions</a>
+        <a href="#reflection">Reflection</a>
       </div>
     </nav>
 
 
-    <!-- Overview -->
-    <section class="case-section" id="overview">
-      <div class="container case-section-grid">
-
-        <div class="case-section-heading">
-          <p class="section-label">Overview</p>
-
-          <h2>
-            Rethinking long-term cardiac monitoring for small dogs.
-          </h2>
-        </div>
-
-        <div class="case-section-content">
-          <p class="case-lead">
-            Traditional veterinary Holter setups can place a bulky recorder,
-            long wires, adhesive electrodes, and several protective layers
-            on a small body.
-          </p>
-
-          <p>
-            I designed PawPulse as one coordinated wearable system: a soft
-            vest, concealed device pocket, controlled wire paths, and compact
-            ECG electronics developed around the realities of veterinary use.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-
     <!-- Challenge -->
-    <section class="case-section case-section-muted" id="challenge">
+    <section class="case-section" id="challenge">
       <div class="container">
 
-        <div class="case-section-intro">
-          <p class="section-label">The Challenge</p>
+        <div class="case-section-grid">
+          <div class="case-section-heading">
+            <p class="section-label">The Challenge</p>
 
-          <h2>
-            Current systems work, but the experience can be bulky and
-            difficult to stabilize.
-          </h2>
+            <h2>
+              Current Holter systems work, but the experience can be difficult
+              to stabilize on a small body.
+            </h2>
+          </div>
 
-          <p>
-            Small dogs leave little room for electrodes, wiring, a recorder,
-            and protective wrapping. Movement can loosen placement, expose
-            cables, and introduce artifacts into the recording.
-          </p>
+          <div class="case-section-content">
+            <p class="case-lead">
+              Small dogs leave limited space for electrodes, wiring, a recorder,
+              and protective wrapping.
+            </p>
+
+            <p>
+              Bulky hardware and exposed cables can restrict movement, loosen
+              electrode placement, and introduce motion artifacts during
+              long-term monitoring.
+            </p>
+          </div>
         </div>
 
-        <div class="case-photo-grid case-photo-grid-three">
-
-          <figure>
-            <img
-              src="assets/images/pawpulse/current Holter setup.jpeg"
-              alt="Existing veterinary Holter setup used on a small dog"
-            >
-
-            <figcaption>
-              Existing veterinary Holter setup
-            </figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src="assets/images/pawpulse/IMG_8707.JPG"
-              alt="ECG electrodes and wires used for veterinary monitoring"
-            >
-
-            <figcaption>
-              Electrodes and exposed wiring
-            </figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src="assets/images/pawpulse/IMG_8708.JPG"
-              alt="Existing veterinary Holter equipment"
-            >
-
-            <figcaption>
-              Existing clinical equipment
-            </figcaption>
-          </figure>
-
-        </div>
-
-        <div class="case-compact-points">
-
-          <article>
-            <p class="case-feature-number">01</p>
-            <h3>Comfort</h3>
-            <p>
-              Reduce unnecessary bulk during 24–48-hour monitoring.
-            </p>
-          </article>
-
-          <article>
-            <p class="case-feature-number">02</p>
-            <h3>Stability</h3>
-            <p>
-              Support consistent electrode and wire placement as the dog moves.
-            </p>
-          </article>
-
-          <article>
-            <p class="case-feature-number">03</p>
-            <h3>Workflow</h3>
-            <p>
-              Make placement and at-home management easier for clinical teams
-              and pet owners.
-            </p>
-          </article>
-
-        </div>
+        <figure class="case-visual case-visual-wide">
+          <img
+            src="assets/images/pawpulse/pawpulse-challenge-comparison.png"
+            alt="Comparison between a traditional veterinary Holter setup and the PawPulse wearable approach"
+          >
+        </figure>
 
       </div>
     </section>
 
 
     <!-- Research -->
-    <section class="case-section" id="research">
+    <section class="case-section case-section-muted" id="research">
       <div class="container">
 
         <div class="case-section-grid">
-
           <div class="case-section-heading">
             <p class="section-label">Research</p>
 
             <h2>
-              Designing from veterinary experience and direct observation.
+              Clinical experience became a focused set of design requirements.
             </h2>
           </div>
 
           <div class="case-section-content">
             <p class="case-lead">
-              I combined expert interviews, workplace observation, precedent
-              analysis, and hands-on testing.
+              I combined an expert interview, workplace observation, precedent
+              analysis, and hands-on testing to understand where current Holter
+              workflows break down for small dogs.
             </p>
 
             <p>
-              A veterinary cardiologist identified electrode detachment and
-              movement artifact as major causes of poor recordings,
-              particularly for small, rounded, or active dogs.
-            </p>
-
-            <p>
-              The research showed that the wearable and electronics needed
-              to be designed as one connected system.
+              The research consistently pointed to the same connected problem:
+              movement, fit, exposed wiring, and unstable electrode contact can
+              reduce comfort while also affecting recording quality.
             </p>
           </div>
-
         </div>
 
-        <div class="case-photo-grid case-photo-grid-three">
+        <div class="case-research-flow" aria-label="PawPulse research process">
+          <article class="case-research-step">
+            <span class="case-research-number">01</span>
+            <div>
+              <h3>Veterinary expertise</h3>
+              <p>
+                A veterinary cardiologist identified electrode detachment,
+                inconsistent contact, and movement artifact as recurring causes
+                of poor long-term recordings—especially on small, rounded, or
+                active patients.
+              </p>
+            </div>
+          </article>
 
-          <figure>
-            <img
-              src="assets/images/pawpulse/IMG_8709.JPG"
-              alt="Veterinary Holter research and clinical observation"
-            >
+          <article class="case-research-step">
+            <span class="case-research-number">02</span>
+            <div>
+              <h3>Clinical observation</h3>
+              <p>
+                I reviewed the full monitoring workflow: shaving and preparing
+                the skin, placing electrodes, routing leads, attaching the
+                recorder, wrapping the patient, and managing the system at home.
+              </p>
+            </div>
+          </article>
 
-            <figcaption>
-              Clinical observation
-            </figcaption>
-          </figure>
+          <article class="case-research-step">
+            <span class="case-research-number">03</span>
+            <div>
+              <h3>Primary pain points</h3>
+              <p>
+                Bulky recorders, exposed wires, multiple protective layers,
+                limited body area, and unnoticed lead failure created challenges
+                for patients, owners, and veterinary teams.
+              </p>
+            </div>
+          </article>
 
-          <figure>
-            <img
-              src="assets/images/pawpulse/IMG_8715.JPG"
-              alt="Veterinary cardiac-monitoring equipment"
-            >
-
-            <figcaption>
-              Equipment and workflow review
-            </figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src="assets/images/pawpulse/IMG_8720.JPG"
-              alt="Existing veterinary ECG-monitoring process"
-            >
-
-            <figcaption>
-              Existing monitoring process
-            </figcaption>
-          </figure>
-
+          <article class="case-research-step">
+            <span class="case-research-number">04</span>
+            <div>
+              <h3>Design requirements</h3>
+              <p>
+                The system needed to be lightweight, adjustable, open beneath
+                the abdomen, stable during movement, protective of the hardware,
+                clear in its status feedback, and capable of reliable local ECG
+                recording.
+              </p>
+            </div>
+          </article>
         </div>
 
         <div class="case-key-insight">
-          <p class="case-key-insight-label">
-            Key insight
-          </p>
+          <p class="case-key-insight-label">Key insight</p>
 
           <p>
-            Fit, motion, pocket location, and wire routing directly influence
-            signal reliability. The vest could not be treated as a separate
-            accessory.
+            Fit, motion, pocket placement, and wire routing directly influence
+            signal reliability. The wearable and electronics had to be designed
+            as one connected system—not as separate accessories.
           </p>
         </div>
 
@@ -343,153 +268,153 @@
     </section>
 
 
-    <!-- Design process -->
-    <section class="case-section case-section-muted" id="process">
-      <div class="container">
-
-        <div class="case-section-intro">
-          <p class="section-label">Design Process</p>
-
-          <h2>
-            From paper patterns to an integrated wearable prototype.
-          </h2>
-
-          <p>
-            The project developed through repeated cycles of pattern making,
-            sewing, electronics testing, fitting, and refinement.
-          </p>
-        </div>
-
-        <div class="case-process-grid">
-
-          <article class="case-process-card">
-            <img
-              src="assets/images/pawpulse/pattern development.jpeg"
-              alt="Paper pattern used to develop the PawPulse vest"
-            >
-
-            <div>
-              <p class="case-process-number">01</p>
-              <h3>Pattern development</h3>
-
-              <p>
-                I translated small-dog body measurements into a wearable
-                pattern and evaluated coverage, openings, and adjustability.
-              </p>
-            </div>
-          </article>
-
-          <article class="case-process-card">
-            <img
-              src="assets/images/pawpulse/electronics testing.jpeg"
-              alt="PawPulse ECG electronics being tested"
-            >
-
-            <div>
-              <p class="case-process-number">02</p>
-              <h3>Electronics testing</h3>
-
-              <p>
-                I tested ECG acquisition, power, leads, and signal capture
-                before integrating the hardware into the vest.
-              </p>
-            </div>
-          </article>
-
-          <article class="case-process-card">
-            <img
-              src="assets/images/pawpulse/final vest.JPG"
-              alt="Final PawPulse vest with integrated electronics"
-            >
-
-            <div>
-              <p class="case-process-number">03</p>
-              <h3>System integration</h3>
-
-              <p>
-                Combining the components led to a concealed back pocket and
-                more intentional wire exits and routing.
-              </p>
-            </div>
-          </article>
-
-        </div>
-
-        <div class="case-photo-grid case-photo-grid-three">
-
-          <figure>
-            <img
-              src="assets/images/pawpulse/IMG_7167.JPG"
-              alt="Early PawPulse pattern and material development"
-            >
-
-            <figcaption>
-              Early material exploration
-            </figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src="assets/images/pawpulse/IMG_7170.JPG"
-              alt="PawPulse vest construction process"
-            >
-
-            <figcaption>
-              Vest construction
-            </figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src="assets/images/pawpulse/IMG_7174.JPG"
-              alt="PawPulse wearable prototype development"
-            >
-
-            <figcaption>
-              Prototype refinement
-            </figcaption>
-          </figure>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- Testing -->
-    <section class="case-section" id="testing">
+    <!-- System architecture -->
+    <section class="case-section" id="architecture">
       <div class="container">
 
         <div class="case-section-grid">
+          <div class="case-section-heading">
+            <p class="section-label">System Architecture</p>
 
+            <h2>
+              Transforming cardiac activity into stored, reviewable ECG data.
+            </h2>
+          </div>
+
+          <div class="case-section-content">
+            <p class="case-lead">
+              The embedded system captures, conditions, processes, and stores
+              the ECG signal before clinical review.
+            </p>
+
+            <p>
+              Electrodes feed the AD8232 analog front end. The ESP32 manages
+              acquisition and data handling, while microSD storage preserves
+              the recording locally. A rechargeable battery powers the system,
+              with Bluetooth available for wireless communication.
+            </p>
+          </div>
+        </div>
+
+        <figure class="case-visual case-visual-wide">
+          <img
+            src="assets/images/pawpulse/pawpulse-system-architecture.png"
+            alt="PawPulse architecture showing electrodes, AD8232, ESP32, microSD storage, battery, Bluetooth, and veterinary ECG review"
+          >
+        </figure>
+
+      </div>
+    </section>
+
+
+    <!-- Wearable design -->
+    <section class="case-section case-section-muted" id="wearable">
+      <div class="container">
+
+        <div class="case-section-grid">
+          <div class="case-section-heading">
+            <p class="section-label">Wearable Design</p>
+
+            <h2>
+              A soft-goods platform shaped around small-dog anatomy and movement.
+            </h2>
+          </div>
+
+          <div class="case-section-content">
+            <p class="case-lead">
+              The open underside, adjustable wrap, and longer back panel support
+              movement without enclosing the abdomen.
+            </p>
+
+            <p>
+              The design balances fit, gentle compression, access, and device
+              protection. The chest structure supports electrode positioning,
+              while the back pocket carries the enclosed recorder away from the
+              animal’s skin.
+            </p>
+          </div>
+        </div>
+
+        <figure class="case-visual case-visual-wide">
+          <img
+            src="assets/images/pawpulse/pawpulse-wearable-design.png"
+            alt="PawPulse wearable design views explaining front, back, pocket, fit, adjustment, and compression"
+          >
+        </figure>
+
+      </div>
+    </section>
+
+
+    <!-- Development process -->
+    <section class="case-section" id="process">
+      <div class="container">
+
+        <div class="case-section-grid">
+          <div class="case-section-heading">
+            <p class="section-label">Development Process</p>
+
+            <h2>
+              The form evolved through repeated pattern, fit, and construction studies.
+            </h2>
+          </div>
+
+          <div class="case-section-content">
+            <p class="case-lead">
+              Each iteration answered a different question about coverage,
+              adjustability, movement, and secure placement.
+            </p>
+
+            <p>
+              Early patterns established basic proportions. Later versions
+              refined the wrap structure, arm openings, dorsal coverage, pocket
+              placement, and the relationship between comfort and stability.
+            </p>
+          </div>
+        </div>
+
+        <figure class="case-visual case-visual-wide">
+          <img
+            src="assets/images/pawpulse/pawpulse-development-process.png"
+            alt="PawPulse development sequence from Pattern 1 and Pattern 2 through prototype and final wearable"
+          >
+        </figure>
+
+      </div>
+    </section>
+
+
+    <!-- Validation -->
+    <section class="case-section case-section-muted" id="validation">
+      <div class="container">
+
+        <div class="case-section-grid">
           <div class="case-section-heading">
             <p class="section-label">Validation</p>
 
             <h2>
-              A real wear study, not only a visual mockup.
+              A real home-wear study evaluated the complete system in motion.
             </h2>
           </div>
 
           <div class="case-section-content">
             <p class="case-lead">
-              The final prototype was worn by my Chihuahua for approximately
+              Arya, my Chihuahua, wore the final prototype for approximately
               22 hours while ECG data was recorded.
             </p>
 
             <p>
-              The test evaluated comfort, mobility, device retention, cable
-              behavior, and whether the placement could produce reviewable
-              ECG information during extended wear.
+              The study evaluated comfort, mobility, device retention, cable
+              behavior, recording continuity, and whether the captured ECG was
+              clear enough for veterinary review.
             </p>
           </div>
-
         </div>
 
         <div class="case-metric-grid">
-
           <article>
             <strong>~22 hours</strong>
-            <span>Extended wear duration</span>
+            <span>Extended home wear</span>
           </article>
 
           <article>
@@ -501,145 +426,87 @@
             <strong>Recorded ECG</strong>
             <span>Functional output captured</span>
           </article>
-
         </div>
 
-        <div class="case-photo-grid case-photo-grid-three">
+        <figure class="case-visual case-visual-portrait">
+          <img
+            src="assets/images/pawpulse/pawpulse-validation.png"
+            alt="PawPulse validation process showing ECG capture, home testing with Arya, veterinary review, and results"
+          >
+        </figure>
 
-          <figure>
-            <img
-              src="assets/images/pawpulse/IMG_9680.JPG"
-              alt="Chihuahua participating in PawPulse wear testing"
-            >
-
-            <figcaption>
-              Wear-test observation
-            </figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src="assets/images/pawpulse/IMG_0585.jpeg"
-              alt="PawPulse wearable positioned on a small dog"
-            >
-
-            <figcaption>
-              Fit and positioning
-            </figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src="assets/images/pawpulse/IMG_0588.jpeg"
-              alt="PawPulse extended-wear testing"
-            >
-
-            <figcaption>
-              Extended-wear testing
-            </figcaption>
-          </figure>
-
-        </div>
-
+        <p class="case-evidence-note">
+          The visual summarizes the test workflow and recorded output. It is a
+          portfolio communication graphic, not a diagnostic report.
+        </p>
 
       </div>
     </section>
 
 
-    <!-- Final solution -->
-    <section class="case-section case-section-muted" id="solution">
+    <!-- Technical contributions -->
+    <section class="case-section" id="contributions">
       <div class="container">
 
         <div class="case-section-grid">
-
           <div class="case-section-heading">
-            <p class="section-label">Final Direction</p>
+            <p class="section-label">Technical Contributions</p>
 
             <h2>
-              A coordinated wearable system built around comfort and stability.
+              I carried the project from clinical problem framing to a tested wearable system.
             </h2>
           </div>
 
           <div class="case-section-content">
             <p class="case-lead">
-              The final direction integrates the vest, electronics pocket,
-              wires, and electrodes into one product experience.
+              PawPulse required me to work across research, soft goods,
+              electronics, software, testing, branding, and documentation.
             </p>
 
             <p>
-              The prototype reflects the strongest ideas from the development
-              process while remaining honest as a functional proof of concept
-              rather than a manufactured commercial product.
+              Rather than contributing one isolated piece, I was responsible for
+              connecting the entire experience and making the design decisions
+              understandable to both technical and nontechnical audiences.
             </p>
           </div>
-
         </div>
 
-        <div class="case-final-grid">
-
-          <figure class="case-final-primary">
-            <img
-              src="assets/images/pawpulse/hero.JPG"
-              alt="Chihuahua wearing the final PawPulse prototype"
-            >
-
-            <figcaption>
-              Final integrated prototype in use.
-            </figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src="assets/images/pawpulse/final vest.JPG"
-              alt="Final PawPulse vest shown separately"
-            >
-
-            <figcaption>
-              Final wearable construction and electronics pocket.
-            </figcaption>
-          </figure>
-
-        </div>
-
-        <div class="case-solution-features">
-
-          <article>
-            <p class="case-feature-number">01</p>
-            <h3>Soft construction</h3>
-
-            <p>
-              Flexible materials support comfort and natural movement.
-            </p>
+        <div class="case-contribution-grid" aria-label="Maria Otero's technical contributions to PawPulse">
+          <article class="case-contribution-item">
+            <span>01</span>
+            <h3>Research</h3>
+            <p>Expert interview, clinical workflow observation, precedent review, and requirements synthesis.</p>
           </article>
 
-          <article>
-            <p class="case-feature-number">02</p>
-            <h3>Adjustable fit</h3>
-
-            <p>
-              The wrap structure stabilizes the wearable around a small chest.
-            </p>
+          <article class="case-contribution-item">
+            <span>02</span>
+            <h3>Wearable design</h3>
+            <p>Pattern development, material selection, fit refinement, compression, adjustment, and pocket placement.</p>
           </article>
 
-          <article>
-            <p class="case-feature-number">03</p>
-            <h3>Concealed pocket</h3>
-
-            <p>
-              Back-mounted storage protects the electronics and reduces
-              side-hanging bulk.
-            </p>
+          <article class="case-contribution-item">
+            <span>03</span>
+            <h3>Embedded systems</h3>
+            <p>Arduino-based prototyping, ESP32 development, AD8232 ECG acquisition, microSD logging, and status feedback.</p>
           </article>
 
-          <article>
-            <p class="case-feature-number">04</p>
-            <h3>Controlled routing</h3>
-
-            <p>
-              Purposeful wire exits reduce loose and exposed cable length.
-            </p>
+          <article class="case-contribution-item">
+            <span>04</span>
+            <h3>CAD &amp; fabrication</h3>
+            <p>Enclosure development, component layout, physical assembly, soldering, cable routing, and iterative construction.</p>
           </article>
 
+          <article class="case-contribution-item">
+            <span>05</span>
+            <h3>Testing</h3>
+            <p>Bench validation, fit studies, movement observation, extended home wear, and review of recorded ECG output.</p>
+          </article>
+
+          <article class="case-contribution-item">
+            <span>06</span>
+            <h3>Brand &amp; documentation</h3>
+            <p>PawPulse identity, visual communication, demo storytelling, technical documentation, and portfolio presentation.</p>
+          </article>
         </div>
 
       </div>
@@ -647,7 +514,7 @@
 
 
     <!-- Reflection -->
-    <section class="case-section" id="reflection">
+    <section class="case-section case-section-muted" id="reflection">
       <div class="container case-section-grid">
 
         <div class="case-section-heading">
@@ -660,15 +527,15 @@
 
         <div class="case-section-content">
           <p class="case-lead">
-            PawPulse taught me to treat materials, fit, movement, electronics,
+            PawPulse taught me to treat fit, movement, materials, electronics,
             and clinical workflow as one connected system.
           </p>
 
           <p>
             The most valuable part of the project was moving from assumptions
             into physical testing. Future development would focus on a smaller
-            enclosed recorder, refined manufacturing patterns, testing across
-            additional body shapes, and formal signal-quality comparison.
+            enclosed recorder, refined manufacturing patterns, additional body
+            shapes, and formal signal-quality comparison.
           </p>
         </div>
 
@@ -684,9 +551,7 @@
           class="case-next-project-link"
           href="index.html#projects"
         >
-          <span class="case-next-project-label">
-            Return to
-          </span>
+          <span class="case-next-project-label">Return to</span>
 
           <span class="case-next-project-title">
             All Featured Projects
@@ -705,7 +570,7 @@
 
   </main>
 
-  <!-- Footer -->
+
   <footer class="site-footer">
     <div class="footer-content container">
 
